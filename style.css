@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #121212;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#theme-toggle{
+    color: white;
+    background-color:transparent;
+    border: none;
+}
+
+.nav-left a, .nav-right a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.subscribe-btn {
+    border: 1px solid white;
+    background: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content img {
+    width: 12%;
+    margin: 0;
+}
+
+.hero-content p {
+    color: #bbb;
+    font-size: 18px;
+    margin-top: -2px;
+}
+
+/* Content Grid */
+.content-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.content-item {
+    display: flex;
+    background: white;
+    overflow: hidden;
+    margin: 25px;
+    align-items: stretch; 
+}
+
+.content-item-img{
+    flex: 2;
+    height: 380px;
+}
+
+.content-item-img img {
+    width: 100%;
+    object-fit: cover; 
+    height:100%; 
+}
+
+.content-info {
+    width: 35%; 
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px 0;
+    padding-left: 20px; 
+    box-sizing: border-box;
+    line-height: 1.2;
+}
+
+
+.ghost-meta {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.ghost-meta img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.ghost-meta .meta, .ghost-meta .date-meta {
+    margin: 0.5px;
+}
+
+.content-details{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.date-meta, .content-details{
+    color:#8e938f;
+}
+
+.category{
+   color: rgb(14, 65, 219);
+}
+
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #ddd;
+    margin: 10px;
+}
+
+.card-flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.card-item {
+    border-radius: 8px;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card-item img {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.card-info >.category{
+    color: rgb(14, 65, 219);
+    margin-bottom: 0;
+}
+
+.card-info > h3{
+    margin-top: 8px;
+    color: #121212;
+
+}
+
+.card-info > p{
+    text-align: left;
+    color: #777;
+}
+
+.card-meta {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.ghost-meta{
+    width: 60%;
+    line-height: 1.2;
+}
+
+.card-info .ghost-meta > .meta-icon{
+    width: 35px;
+    height: 35px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .content-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-item-img,
+    .content-info {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .content-item-img {
+        height: auto;
+    }
+
+    .content-info {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero-content img {
+        width: 20%;
+    }
+
+    .card-flex-container {
+        flex-direction: column;
+    }
+
+    .card-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-info {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content img {
+        width: 30%;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .nav-left a, 
+    .nav-right a,
+    .subscribe-btn {
+        margin-right: 10px;
+    }
+
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .card-item img {
+        height: auto;
+    }
+}
